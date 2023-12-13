@@ -35,11 +35,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.project-img a:hover img {
-  filter: brightness(100%);
-  transform: scale(1.05);
-}
-
 .project-text {
   flex: 1;
   display: flex;
@@ -75,12 +70,6 @@
   margin-left: 0.5rem;
 }
 
-.project-text a:hover {
-  color: var(--secondary-color-light);
-  /* font-weight: bold; */
-  text-decoration: none;
-}
-
 .project-text .description {
   font-size: 1.05rem;
   z-index: 4;
@@ -104,6 +93,18 @@
 
 .project-wrapper .project-text {
   padding: 1rem 1.5rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-text a:hover {
+    color: var(--secondary-color-light);
+    text-decoration: none;
+  }
+
+  .project-img a:hover img {
+    filter: brightness(100%);
+    transform: scale(1.05);
+  }
 }
 
 @media screen and (max-width: 1440px) {

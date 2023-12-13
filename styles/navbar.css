@@ -61,10 +61,12 @@ nav .logo {
   align-items: center;
 }
 
-.nav-list ul li:hover a {
-  background-position: -100%;
-  transform: translateY(-4px);
-  background-color: var(--secondary-color-light);
+@media (hover: hover) and (pointer: fine) {
+  .nav-list ul li:hover a {
+    background-position: -100%;
+    transform: translateY(-4px);
+    background-color: var(--secondary-color-light);
+  }
 }
 
 @keyframes headerFadeIn {
