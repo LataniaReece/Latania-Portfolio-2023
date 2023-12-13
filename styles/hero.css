@@ -161,9 +161,11 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    margin-top: 2rem;
-    height: calc(100vh - 80px);
-    min-height: calc(100vh - 80px);
+    height: 100vh;
+    min-height: 100vh;
+  }
+  .hero .about {
+    bottom: 15%;
   }
 
   .hero .about .title {
