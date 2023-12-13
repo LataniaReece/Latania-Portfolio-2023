@@ -85,7 +85,7 @@ nav .logo {
     height: 80px;
     width: 100%;
     flex-direction: row;
-    padding: var(--page-padding-mobile);
+    padding: 0 2rem;
   }
 
   .nav-list ul {

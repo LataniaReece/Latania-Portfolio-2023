@@ -9,12 +9,13 @@
 
 .hero .about {
   align-self: flex-end;
-  margin-bottom: 7rem;
   padding: var(--page-padding-large-desktop);
   z-index: 10;
   transform: translateX(-100%);
   opacity: 0;
   animation: headerContentAnimation 1s ease-in 3s forwards;
+  position: absolute;
+  bottom: 10%;
 }
 
 .hero .about .title {
@@ -132,7 +133,6 @@
 @media screen and (max-width: 1024px) {
   .hero .about {
     align-self: flex-end;
-    margin-bottom: 7rem;
     padding: var(--page-padding-tablet);
   }
 
@@ -176,7 +176,6 @@
 
   .hero .about {
     padding: var(--page-padding-mobile);
-    margin-bottom: 10rem;
   }
 
   #hero-svg {

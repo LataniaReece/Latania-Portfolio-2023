@@ -13,10 +13,10 @@
   --secondary-color-light: #2f779d;
 
   --border-radius: 20px;
-  --page-padding-large-desktop: 0 4rem 0 12rem;
-  --page-padding-small-desktop: 0 3rem 0 10rem;
-  --page-padding-tablet: 0 3rem 0 8rem;
-  --page-padding-mobile: 0 2rem;
+  --page-padding-large-desktop: 0 4rem 2rem 12rem;
+  --page-padding-small-desktop: 0 3rem 2rem 10rem;
+  --page-padding-tablet: 0 3rem 2rem 8rem;
+  --page-padding-mobile: 0 2rem 2rem 2rem;
 }
 
 * {
