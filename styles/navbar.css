@@ -1,0 +1,101 @@
+nav {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 100vh;
+  width: 80px;
+  color: white;
+  animation: headerFadeIn 0.4s ease-in 2.5s forwards;
+}
+
+nav .logo {
+  font-size: 1.45rem;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-family: "Great Vibes", cursive;
+}
+
+.nav-list-container {
+  visibility: visible;
+  animation: none;
+}
+
+.nav-list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list ul li {
+  margin: 0.6rem 0;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-list ul li a {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--text-color-light);
+  transition: all 0.2s;
+  border-radius: 50%;
+  border: 1px solid var(--text-color-light);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list ul li:hover a {
+  background-position: -100%;
+  transform: translateY(-4px);
+  background-color: var(--secondary-color-light);
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    flex-direction: row;
+    padding: var(--page-padding-mobile);
+  }
+
+  .nav-list ul {
+    flex-direction: row;
+  }
+
+  .nav-list ul li {
+    margin: 0 0.6rem;
+  }
+
+  .nav-list ul li a {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
