@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  min-height: 700px;
+  min-height: 100vh;
   position: relative;
   color: var(--text-color);
   display: flex;
@@ -162,6 +162,8 @@
 @media screen and (max-width: 768px) {
   .hero {
     margin-top: 2rem;
+    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
   }
 
   .hero .about .title {
